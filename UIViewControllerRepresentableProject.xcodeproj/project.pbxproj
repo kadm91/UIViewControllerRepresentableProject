@@ -11,6 +11,7 @@
 		007D77D92B7560C30079B418 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D77D82B7560C30079B418 /* ContentView.swift */; };
 		007D77DB2B7560C50079B418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007D77DA2B7560C50079B418 /* Assets.xcassets */; };
 		007D77DE2B7560C50079B418 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007D77DD2B7560C50079B418 /* Preview Assets.xcassets */; };
+		007D77E52B7572AC0079B418 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D77E42B7572AC0079B418 /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		007D77D82B7560C30079B418 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		007D77DA2B7560C50079B418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007D77DD2B7560C50079B418 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		007D77E42B7572AC0079B418 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				007D77D62B7560C30079B418 /* UIViewControllerRepresentableProjectApp.swift */,
 				007D77D82B7560C30079B418 /* ContentView.swift */,
+				007D77E42B7572AC0079B418 /* ImagePickerView.swift */,
 				007D77DA2B7560C50079B418 /* Assets.xcassets */,
 				007D77DC2B7560C50079B418 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007D77D92B7560C30079B418 /* ContentView.swift in Sources */,
+				007D77E52B7572AC0079B418 /* ImagePickerView.swift in Sources */,
 				007D77D72B7560C30079B418 /* UIViewControllerRepresentableProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

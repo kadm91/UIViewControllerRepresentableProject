@@ -8,16 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showImagaePickerView = false
+    @State private var selectedImage: UIImage?
+    @State private var image = UIImage()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Choose an Image")
+                .font(.largeTitle)
+                .padding()
+            Spacer()
+            imageView
+                .resizable()
+                .scaledToFit()
+                .onTapGesture {
+                    showImagaePickerView.toggle()
+                }
+                .padding()
+            Spacer()
+            Spacer()
         }
-        .padding()
+        .sheet(isPresented: $showImagaePickerView, content: {            ImagePickerView(selectedImage: $selectedImage)
+        })
     }
 }
+
+//MARK: - extension
+
+extension ContentView {
+    var imageView: Image {
+        guard let selectedImage = selectedImage else {
+            return Image(systemName: "photo")
+        }
+        return Image(uiImage: selectedImage)
+    }
+}
+
+//MARK: - Preview
 
 #Preview {
     ContentView()
